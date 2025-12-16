@@ -1,5 +1,5 @@
 # 📊 PeerReturnGaps
-Python implementation (INCOMPLETE version) for the quick project: On Cross-Stock Predictability of Peer Return Gaps in China.
+Python implementation (INCOMPLETE version) for the quick project: [On Cross-Stock Predictability of Peer Return Gaps in China 📄](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5417347).
 
 We construct the Peer Return Gap (PRG), a firm-level characteristic, as the difference between the lagged returns of a focal firm’s peer group and the firm’s own lagged return. As a synthesized indicator, PRG quantifies two core components of cross-sectional stock return predictability:
 
