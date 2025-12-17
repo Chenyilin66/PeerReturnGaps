@@ -10,7 +10,7 @@ We construct the Peer Return Gap (PRG), a firm-level characteristic, as the diff
 Together, this metric provides a unified view of both peer group dynamics and firm-specific return patterns.
 
 The program contains:
-  📋 Univariate portfolio sorting;  # 修正拼写错误：Univariare → Univariate
+  📋 Univariate portfolio sorting; 
   🧮 Bivariate portfolio sorting;
   📉 Fama-Macbeth regression;
 
