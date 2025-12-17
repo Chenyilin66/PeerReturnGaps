@@ -10,6 +10,19 @@ We construct the Peer Return Gap (PRG), a firm-level characteristic, as the diff
 Together, this metric provides a unified view of both peer group dynamics and firm-specific return patterns.
 
 The program contains:
-  📋 Univariare portfolio sorting;
+  📋 Univariate portfolio sorting;  # 修正拼写错误：Univariare → Univariate
   🧮 Bivariate portfolio sorting;
   📉 Fama-Macbeth regression;
+
+## 📝 PRG Definition
+The Peer Return Gap for stock $i$ in month $m$ of year $t+1$ is formally defined as the risk-adjusted divergence between the peer portfolio's performance and the individual stock's performance:
+
+$$
+\text{PRG}_{i,m} = \beta_{i}^{\text{Peer}} \cdot (R_{i,m}^{\text{Peer}} - Rf_m) - (R_{i,m}^{\text{Stock}} - Rf_m)
+$$
+
+📌 **Variable Explanations**:
+- $Rf_m$: Risk-free rate at month $m$;
+- $\beta_{i}^{\text{Peer}}$: Regression coefficient of stock $i$'s monthly return on its peer portfolio's return (estimated using monthly data from year $t-4$ to $t$).
+
+This formulation incorporates a return volatility adjustment through $\beta_i^\text{Peer}$, which effectively accounts for differential risk characteristics between the individual security and its peer portfolio, ensuring that the gap measure reflects risk-adjusted performance divergence. Such a composite measure quantifies two key aspects: the aggregate strength of a stock’s peer group and its relative position within that group.
